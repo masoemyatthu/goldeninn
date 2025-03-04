@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+  --primary-color:hsla(35, 21%, 40%, 0.973);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: 'Schibsted Grotesk',sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  background:linear-gradient(10deg,rgba(0,0,0,0.3),rgba(0, 0, 0, 0.5)),url(./../assets/img/banner/banner3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+
+  /* position: relative; */
+}
+
+/* Start Nav Bar */
+.navbar{
+  background: linear-gradient(rgba(0,0,0,0.3),var(--primary-color));
+  padding: 20px 30px;
+
+  transition: all .7s;
+}
+
+.navmenus{
+  background: linear-gradient(rgba(0,0,0,0.6),var(--primary-color));
+  padding: 5px 30px;
+}
+
+.menuitems{
+  color: #f4f4f4;
+  font-size: 13px;
+  letter-spacing: 1px;
+
+  transition: color .5s;
+}
+
+.menuitems:hover{
+  color: skyblue;
+}
+
+.lines1,.lines2,.lines3{
+  width: 25px;
+  height: 3px;
+  margin: 6px;
+}
+
+.crossxs .lines1{
+  transform: rotate(-45deg)  translate(-6px,6px);
+}
+
+.crossxs .lines2{
+  opacity: 0;
+}
+
+.crossxs .lines3{
+  transform: rotate(45deg) translate(-6px,-6px);
+}
+
+/* End Nav Bar */
+
+/* Start Banner */
+.banners{
+  width: 1005;
+  background:linear-gradient(10deg,rgba(0,0,0,0.3),rgba(0, 0, 0, 0.5)),url(./../assets/img/banner/banner3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  padding-top: 200px;
+}
+
+.yours{
+  letter-spacing: 3px;
+}
+
+
+@media(max-width:993px){
+  .yours{
+    font-size: 50px;
+  }
+}
+
+@media(max-width:765px){
+  .yours{
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+}
+
+.bannerheaders{
+  /* font-weight: 600; */
+  animation-name: bnanis;
+  animation-duration: 2s;
+}
+
+@media(max-width:765px){
+  .bannerheaders{
+    font-size: 20px;
+  }
+}
+
+.lines{
+  width: 30px;
+  height: 2px;
+  background-color: aqua;
+
+  animation-name: bnanis;
+  animation-duration: 2s;
+}
+
+.bannerparagraphs{
+  animation-name: bnanis;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+
+  animation-fill-mode: backwards;
+}
+
+@keyframes bnanis{
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@media(min-width:993px){
+  .formchecks{
+    width: 450px;
+
+    float: right;
+  }
+}
+
+/* End Banner */
+
+
+/* Start Welcome Section */
+
+
+.welcomesections{
+  background-color: #f4f4f4;
+}
+
+.welcomelists{
+  background-color: #f4f4f4;
+  color: #444;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 1.5px;
+
+  display: flex;
+  align-items: center;
+}
+
+@media(max-width:765px){
+
+  .titles{
+    font-size:25px;
+  }
+
+  .welcomelists{
+    font-size: 19px;
+  }
+
+  .welcomelists img{
+    width: 40px;
+  }
+}
+
+
+.activeitems{
+  background-color: #f9f9f9;
+}
+
+@media (min-width:765px) {
+  .welcomeimages{
+    width: 62%;
+  }
+}
+
+.filters{
+  width: 100%;
+  height: auto;
+}
+
+.filters img{
+  width: 100%;
+  height: auto;
+  transition: all .5s ease-in;
+}
+
+.filters img:hover{
+  border-radius: 15px;
+}
+
+
+/* End Welcome Section */
+
+
+/* Start Room Section */
+
+
+
+/* End Room Section */
